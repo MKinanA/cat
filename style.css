@@ -56,6 +56,10 @@ body {
     height: 100%;
 }
 
+body.inactive {
+    overflow-y: hidden;
+}
+
 section {
     min-height: 100vh;
     width: 100vw;
@@ -175,7 +179,7 @@ h2 span, h3 span {
 }
 
 #home .img img {
-    height: 56vh;
+    height: 32vw;
 }
 
 .img .desc, .iframe .desc {
@@ -360,7 +364,7 @@ footer .up-arrow .bx-chevrons-up:hover {
 
 @media (max-width: 1200px) {
     html {
-        font-size: 80%;
+        font-size: 90%;
     }
     #about .content {
         width: 40%;
@@ -388,10 +392,6 @@ footer .up-arrow .bx-chevrons-up:hover {
     }
     #about {
         gap: 2rem;
-    }
-    #home .img img {
-        height: 41.5vw;
-        width: 54vw;
     }
     #about .content {
         width: 35%;
@@ -421,8 +421,9 @@ footer .up-arrow .bx-chevrons-up:hover {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        padding: 10vh 0 calc(10vh + 4rem);
         text-align: center;
         background: rgba(0, 0, 0, 0.875);
         transform: rotateX(90deg);
@@ -442,7 +443,6 @@ footer .up-arrow .bx-chevrons-up:hover {
         padding: 1rem;
         display: block;
         background: var(--bg-color);
-        margin: 0.5rem;
         width: 14rem;
         border-radius: 4px;
         border: 2px solid #000000;

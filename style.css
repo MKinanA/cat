@@ -150,6 +150,7 @@ body>section:nth-child(2) {
     color: transparent;
     -webkit-text-stroke: 1.5px var(--main-color);
     letter-spacing: 4px;
+    line-height: 1.25;
 }
 
 #home .content h3 {
@@ -273,7 +274,7 @@ section h2 {
     gap: 1rem;
 }
 
-.container * {
+.container>*:not(div) {
     height: 100%;
     border-radius: 1rem;
     border: 4px solid var(--text-color);
@@ -281,10 +282,26 @@ section h2 {
     outline-offset: 4px;
 }
 
-.container *:hover {
+.container>*:not(div):hover {
     outline: 4px solid var(--main-color);
     outline-offset: -4px;
     transform: scale(1.05);
+}
+
+.container .more {
+    margin: 0 1rem;
+}
+
+.container .more * {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.container .more span:first-of-type {
+    background-color: white;
+    color: var(--bg-color);
+    border-radius: 50%;
 }
 
 #videos {

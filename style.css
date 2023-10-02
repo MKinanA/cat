@@ -449,15 +449,17 @@ footer .up-arrow .bx-chevrons-up:hover {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 1rem;
         align-items: center;
-        padding: 10vh 0 calc(10vh + 4rem);
+        /* padding: 10vh 0 calc(10vh + 4rem); */
         text-align: center;
         background: rgba(0, 0, 0, 0.875);
         transform: rotateX(90deg);
         visibility: hidden;
         transition: all .5s ease-out;
         box-shadow: 0 0 2rem #000000;
+        overflow-y: auto;
     }
     nav.active {
         visibility: initial;
